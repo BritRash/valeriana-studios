@@ -1,0 +1,66 @@
+h2,
+p {
+  margin: 0;
+  font-family: playfair-display;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.boxes > * {
+  padding: .5rem;
+  background-color: #333;
+  color: white;
+}
+.boxes {
+  display: grid;
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: .5rem;
+}
+
+.boxes li {
+  background-image:
+    linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 40em) {
+  .boxes {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+  }
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom-left {
+  transition: transform .2s; /* Animation */
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom-left:hover {
+  transform-origin: left;
+  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.zoom-right {
+  transition: transform .2s; /* Animation */
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom-right:hover {
+  transform-origin: right;
+  transform: scale(2.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

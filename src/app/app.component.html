@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="mySidenav" class="sidenav">
+  <a routerLink="/home">Home</a>
+  <a routerLink="/about">About</a>
+  <a routerLink="/portfolio">Portfolio</a>
+  <a routerLink="/contact">Contact</a>
+</div>
+<div id="main">
+  <section id="content">
+    <div class="container">
+      <img class ="responsive" alt="Valeriana Studios Logo" src="assets/ValerianaStudios.png">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Get Our Newsletter</h1>
+      <form action="">
+        <button type="submit" class="button_1"><a href = "https://goo.gl/forms/zP0Dqvy06qu0uHdp1">Subscribe Here</a></button>
+      </form>
+    </div>
+  </section>
+</div>
+
